@@ -1,0 +1,41 @@
+.SeasonScreen__episodeImage__dark {
+  display: flex;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.53);
+  transition: opacity 400ms;
+}
+.SeasonScreen__episodeImage__playBtn {
+  object-fit: contain;
+  opacity: 1;
+  height: 90px;
+}
+.SeasonScreen__episodeContentHeading {
+  font-size: 1.6rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.SeasonScreen__episodeContentDescription {
+  font-size: 0.85rem;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.SeasonScreen__episode:hover .SeasonScreen__episodeImage__dark {
+  opacity: 1;
+}
+
+@media screen and (max-width: 400px) {
+  .SeasonScreen__episodeImageCover {
+    padding-top: 10px;
+  }
+  .SeasonScreen__episodeContentHeading {
+    font-size: 1.3rem;
+  }
+  .SeasonScreen__episodeContentDescription {
+    font-size: 0.7rem;
+  }
+}
